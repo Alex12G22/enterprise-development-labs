@@ -1,9 +1,15 @@
-﻿using Airline.Domain.Model;
+using Airline.Domain.Model;
 
 namespace Airline.Domain.Data;
 
+/// <summary>
+/// Статический класс для заполнения начальных данных в системе.
+/// </summary>
 public static class DataSeeder
 {
+    /// <summary>
+    /// Список рейсов, доступных в системе.
+    /// </summary>
     public static readonly List<Flight> Flights =
     [
         new() { Id = 1, Code = "FL001", DeparturePoint = "Москва", ArrivalPoint = "Санкт-Петербург", DepartureDate = new DateTime(2023, 10, 1), ArrivalDate = new DateTime(2023, 10, 1), DepartureTime = TimeSpan.FromHours(10), TravelTime = TimeSpan.FromHours(2), AircraftType = "Boeing 737" },
@@ -15,12 +21,18 @@ public static class DataSeeder
         new() { Id = 7, Code = "FL007", DeparturePoint = "Москва", ArrivalPoint = "Казань", DepartureDate = new DateTime(2023, 10, 7), ArrivalDate = new DateTime(2023, 10, 7), DepartureTime = TimeSpan.FromHours(22), TravelTime = TimeSpan.FromHours(2), AircraftType = "Boeing 737" }
     ];
 
+    /// <summary>
+    /// Список доступных самолетов в системе.
+    /// </summary>
     public static readonly List<Aircraft> Aircrafts =
     [
         new() { Id = 1, Model = "Boeing 737", LoadCapacity = 50000, Performance = 800, MaxPassengers = 200 },
         new() { Id = 2, Model = "Airbus A320", LoadCapacity = 45000, Performance = 750, MaxPassengers = 180 }
     ];
 
+    /// <summary>
+    /// Список пассажиров, зарегистрированных в системе.
+    /// </summary>
     public static readonly List<Passenger> Passengers =
     [
         new() { Id = 1, PassportNumber = "1234567890", FullName = "Иванов И.И." },
@@ -32,6 +44,9 @@ public static class DataSeeder
         new() { Id = 7, PassportNumber = "0011223344", FullName = "Егоров Е.Е." }
     ];
 
+    /// <summary>
+    /// Список бронирований, сделанных пассажирами.
+    /// </summary>
     public static readonly List<Booking> Bookings =
     [
         new() { Id = 1, FlightId = 1, PassengerId = 1, TicketNumber = "T001", SeatNumber = "A1", BaggageWeight = 20 },
