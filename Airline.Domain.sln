@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35521.163 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Airline.Domain", "Airline.Domain\Airline.Domain.csproj", "{975F0EB8-9E58-43E2-A31E-221062C94260}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4F62835C-3DF3-4685-891C-9DFC94DF00D1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{63F5550C-1C5E-4A2E-B377-3ABCD9617151}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Airline.Domain.Test", "Airline.Domain.Test\Airline.Domain.Test.csproj", "{B3597848-25A7-4913-AA28-E743EAF42007}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{975F0EB8-9E58-43E2-A31E-221062C94260}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{975F0EB8-9E58-43E2-A31E-221062C94260}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{975F0EB8-9E58-43E2-A31E-221062C94260}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{975F0EB8-9E58-43E2-A31E-221062C94260}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3597848-25A7-4913-AA28-E743EAF42007}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3597848-25A7-4913-AA28-E743EAF42007}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3597848-25A7-4913-AA28-E743EAF42007}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3597848-25A7-4913-AA28-E743EAF42007}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{975F0EB8-9E58-43E2-A31E-221062C94260} = {4F62835C-3DF3-4685-891C-9DFC94DF00D1}
+		{63F5550C-1C5E-4A2E-B377-3ABCD9617151} = {4F62835C-3DF3-4685-891C-9DFC94DF00D1}
+		{B3597848-25A7-4913-AA28-E743EAF42007} = {63F5550C-1C5E-4A2E-B377-3ABCD9617151}
+	EndGlobalSection
+EndGlobal
